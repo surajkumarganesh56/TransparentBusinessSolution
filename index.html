@@ -35,27 +35,35 @@
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home<br></a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#team">Team</a></li>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li class="dropdown">
+                <a href="#about">About <i class="bi bi-chevron-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="#about">Mission, Vision , Objectives</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                </ul>
+            </li>
+            <li><a href="#services">Services</a></li>
+            <!-- <li><a href="#team">Team</a></li> -->
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+    </nav>
       <a class="btn-getstarted flex-md-shrink-0" href="index.html#about">Get Started</a>
     </div>
   </header>
 
   <main class="main">
-
     <!-- Hero Section -->
     <section id="hero" class="hero section">
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h1 data-aos="fade-up">Expert Chartered Accountants at Your Service</h1>
-            <p data-aos="fade-up" data-aos-delay="100"> At tbs, we provide expert accounting, tax, and financial advisory services tailored to your needs. Trust our certified professionals to simplify your finances and drive your success.</p>
-            <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="200">
+            <h1 data-aos="fade-up">Your Partner in Strategic Outsourcing & Operational Efficiency</h1>
+            <p data-aos="fade-up" data-aos-delay="100"> 
+              Introducing TBS, a dynamic service outsourcing firm committed to delivering comprehensive solutions that empower businesses to excel. We specialize in a diverse range of services tailored to meet the unique needs of our clients  
+            </p>
+            
+              <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="200">
               <a href="#about" class="btn-get-started">Get Started <i class="bi bi-arrow-right"></i></a>
               <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center justify-content-center ms-0 ms-md-4 mt-4 mt-md-0"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
             </div>
@@ -74,33 +82,62 @@
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>About Us</h2>
-        <p>Who We Are<br></p>
+        <p>Vision, Mission, Objectives <br></p>
     </div>
+    <div class="container d-flex">
+      <div style="max-width: 100%">
+          <h4 class="fw-bold text-primary"> Vision Statement</h4>
+          <p class="text-muted mt-2">
+            To be the leading provider of innovative outsourcing services, recognized for our commitment to excellence, 
+            client success, and transformative impact on businesses worldwide.
+          </p>
+      </div>
+    </div>
+    <div class="container d-flex">
+      <div style="max-width: 100%">
+          <h4 class="fw-bold text-primary"> Mission Statement</h4>
+          <p class="text-muted mt-2">
+            To empower businesses by delivering comprehensive outsourcing solutions—including counseling, 
+            scheme and asset monitoring, stock verification, damage destruction, import facilitation, channel management support, executive recruitment, export buyer leads, 
+            and employee outsourcing—that drive efficiency, foster growth, and create lasting value.
+          </p>
+      </div>
+    </div>
+    <div class="container d-flex">
+      <div style="max-width: 100%">
+          <h4 class="fw-bold text-primary"> Objectives</h4>
+          <p class="text-muted mt-2">
+            1.	Client-Centric Excellence:
+            o	Deliver high-quality, customized outsourcing solutions that meet the unique needs of each client.
+            o	Achieve a client satisfaction rate of over 90% within the first year of operations.
+            2.	Operational Efficiency:
+            o	Implement streamlined processes to ensure timely and cost-effective service delivery.
+            o	Reduce operational costs by 15% within the first two years through continuous improvement initiatives.
+            3.	Market Expansion:
+            o	Establish a strong presence in the local market within the first year.
+            o	Expand services to at least two international markets within the first three years.
+            4.	Innovation and Growth:
+            o	Invest in technology and training to stay ahead of industry trends.
+            o	Develop and launch at least two new service offerings within the first two years.
+            5.	Employee Development:
+            o	Provide ongoing training and professional development opportunities for all staff.
+            o	Achieve an employee retention rate of 85% or higher within the first year.
+            These statements and objectives are designed to align your company's strategic direction with its core services and values, ensuring a clear path toward achieving your business goals.
+            
+          </p>
+      </div>
+    </div>
+
+    </div>
+
     <!-- End Section Title -->
-    <div class="container">
-        <div class="row gy-4">
-            <!-- First Card -->
-            <div class="col-lg-6 order-2 order-lg-1">
-                <div class="card h-100">
-                    <div class="card-body d-flex flex-column justify-content-center">
-                        <p class="card-text">
-                            Transparent Business Solutions is a leading chartered accountancy firm in Nepal, dedicated to providing comprehensive auditing and financial consulting services. Our team of seasoned professionals offers a range of solutions tailored to meet the diverse needs of businesses across various industries.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- Second Card -->
-            <div class="col-lg-6 order-1 order-lg-2">
-                <div class="card h-100">
-                    <div class="card-body" data-aos="zoom-out">
-                        <p class="card-text">
-                            Our mission is to deliver unparalleled auditing services that ensure transparency, compliance, and financial accuracy. We aim to empower businesses with the insights and assurance they need to thrive and succeed in today's competitive environment.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+  </div>
+  
+  
+
+  </div>
+  
 </section>
 
     <!-- /About Section -->
@@ -110,20 +147,18 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
-        <p>Check Our Services<br></p>
+        <p>Our Services<br></p>
       </div><!-- End Section Title -->
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item item-cyan position-relative">
               <i class="bi bi-file-earmark-text icon"></i>
-              <h3>Auditing Services</h3>
-              <p>Statutory Audits
-                Internal Audits
-                Tax Audits
-                Compliance Audits
-                Forensic Audits</p>
-              <a href="#" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+              <h3>Business Counselling Services</h3>
+              <p>
+                Guides organizations in strategy, finance, marketing, and development to drive growth and success.
+              </p>
+                <a target="_blank" href="business_counselling.html" class="read-more stretched-link"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -299,9 +334,9 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Kuldip Poudel</h4>
-                <span>Chief Executive Officer</span>
-                <p>Driving innovation and integrity, Kuldip Poudel leads Audit with visionary leadership and a commitment to excellence.</p>
+                <h4>CA Kuldip Poudel</h4>
+                <span>Chairman</span>
+                <p>Driving innovation and integrity, Kuldip Poudel leads with visionary leadership and a commitment to excellence.</p>
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -309,16 +344,16 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member">
               <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/Amir.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.facebook.com/amirchand.khatiwada.9?rdid=zUOVj8a44OekF4R3&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16LFBNJRiU%2F#"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/amir_chand_khatiwada/?utm_source=qr&igsh=MXEwZGViMGxsZXdzYQ%3D%3D#"><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Kuldip Poudel</h4>
+                <h4>Amir Chand Khatiwada</h4>
                 <span>Chief Executive Officer</span>
                 <p>Driving innovation and integrity, Kuldip Poudel leads Audit with visionary leadership and a commitment to excellence.</p>
               </div>

@@ -469,6 +469,51 @@ h6 {
   }
 }
 
+
+
+
+/* for dropdown for navbar 
+
+*/
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 100%;
+  left: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Add arrow indicator */
+.bi-chevron-down {
+  font-size: 0.8em;
+  margin-left: 5px;
+}
+
+
 /* Listing Dropdown - Desktop */
 @media (min-width: 1200px) {
   .navmenu .listing-dropdown {
