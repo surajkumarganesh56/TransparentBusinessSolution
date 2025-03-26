@@ -505,7 +505,16 @@ h6 {
 /* Show dropdown on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+  background-color: #5fa718;
 }
+
+/* Change color when a link is clicked */
+.dropdown-content a:active,
+.dropdown-content a:focus {
+  background-color: #d4cfe1; /* Change this to your desired color */
+  color: white;
+}
+
 
 /* Add arrow indicator */
 .bi-chevron-down {
