@@ -460,7 +460,7 @@
                 <div class="col-md-6">
                   <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
                 </div>
-                <div class="col-md-6 ">
+                <div class="col-md-6">
                   <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
                 </div>
                 <div class="col-12">
@@ -470,14 +470,57 @@
                   <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
                 </div>
                 <div class="col-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
                   <button type="submit">Send Message</button>
                 </div>
               </div>
             </form>
-          </div><!-- End Contact Form -->
+          </div>
+          
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const form = document.querySelector(".php-email-form");
+          
+              form.addEventListener("submit", async function (event) {
+                event.preventDefault(); // Prevent default form submission
+          
+                const formData = new FormData(form);
+                const response = await fetch(form.action, {
+                  method: "POST",
+                  body: formData,
+                });
+          
+                const result = await response.json();
+          
+                // Remove existing message box if any
+                const oldMessage = document.querySelector(".form-message");
+                if (oldMessage) {
+                  oldMessage.remove();
+                }
+          
+                // Create message box
+                const messageBox = document.createElement("div");
+                messageBox.classList.add("form-message");
+                messageBox.style.padding = "10px";
+                messageBox.style.borderRadius = "5px";
+                messageBox.style.marginTop = "10px";
+                messageBox.style.textAlign = "center";
+                messageBox.style.fontWeight = "bold";
+          
+                if (result.success) {
+                  messageBox.style.backgroundColor = "green";
+                  messageBox.style.color = "white";
+                  messageBox.innerText = "✅ Success! Email sent successfully.";
+                } else {
+                  messageBox.style.backgroundColor = "red";
+                  messageBox.style.color = "white";
+                  messageBox.innerText = "❌ Error: " + (result.message || "Something went wrong.");
+                }
+          
+                form.appendChild(messageBox);
+              });
+            });
+          </script>
+          
 
         </div>
       </div>
